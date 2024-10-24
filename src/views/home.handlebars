@@ -1,0 +1,22 @@
+{{!-- Recibimos los productos y los renderizamos --}}
+
+{{!-- partial con el diseno de la card --}}
+<div class="paginateContainer">
+
+    {{> card}}
+
+    <div class="buttonContainer">
+
+        {{#if pagination.hasPrevPage}}
+                <button class="btn-form"><a href="/products?page={{pagination.prevPage}}&limit={{pagination.limit}}">Prev</a></button>
+            {{/if}}
+
+            <span class="page">page {{pagination.page}} of {{pagination.totalPages}}</span>
+
+            {{#if pagination.hasNextPage}}
+                <button class="btn-form"><a href="/products?page={{pagination.nextPage}}&limit={{pagination.limit}}">Next</a></button>
+            {{/if}}
+    </div>
+</div>
+
+

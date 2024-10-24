@@ -1,0 +1,27 @@
+{{!-- Aqui estara la vista del carrito --}}
+
+<div class="cartContainer">
+        <ul class="productContain">
+            {{#each cart}}
+                <li class="cartProduct">
+                    <div class="infoContain">
+                        <img src={{this.thumbnails}} alt={{this.title}}>
+                    </div>
+                    <div class="infoContain">
+                        <p><span class="font">Product Id:</span> {{this.productId}}</p>
+                        <p><span class="font">Title:</span> {{this.title}}</p>
+                    </div>
+                    <div class="infoContain">
+                        <p><span class="font">Quantity:</span> {{this.quantity}}</p>
+                        <p><span class="font">Category:</span> {{this.category}}</p>
+                        <p><span class="font">Price x unit:</span> ${{this.price}}</p>
+                    </div>
+                </li>
+            {{/each}}
+        </ul>
+
+    <div>
+        <button class="cleanCart">Clean Cart</button>
+    </div>
+</div>
+

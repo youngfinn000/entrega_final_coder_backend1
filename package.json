@@ -1,0 +1,23 @@
+{
+  "name": "entrega_final_coder_backend1",
+  "version": "2.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "Laureano Martin",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.3",
+    "mongoose": "^8.5.3",
+    "mongoose-paginate-v2": "^1.8.3",
+    "socket.io": "^4.7.5"
+  },
+  "description": " entrega final backend 1 coderhouse"
+}
